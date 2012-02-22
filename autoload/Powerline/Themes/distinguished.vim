@@ -37,7 +37,7 @@ let g:Powerline#Themes#distinguished#theme = Pl#Theme#Create(
 		\ , Pl#Segment#Split()
 	\ ),
 	\ Pl#Theme#Buffer('ft_nerdtree'
-		\ , 'filename'
+		\ , ['raw.line', '%{expand("%:p:h")}']
 		\ , Pl#Segment#Truncate()
 		\ , Pl#Segment#Split()
 	\),
